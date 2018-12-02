@@ -1,5 +1,5 @@
 apiVersion: certmanager.k8s.io/v1alpha1
-kink: Certificate
+kind: Certificatemetadata
 metadata:
   name: k8s-multi-com-tls
   issuerRef:
