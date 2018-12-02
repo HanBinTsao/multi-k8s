@@ -14,7 +14,7 @@ spec:
   acme:
     config:
       - http01:
-        ingressClass: nginx
+          ingressClass: nginx
     domains:
       - k8s-multi.tsao111.info
       - www.tsao111.info
