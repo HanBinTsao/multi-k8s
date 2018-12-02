@@ -1,0 +1,19 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kink: Certificate
+metadata:
+  name: k8s-multi-com-tls
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: k8s-multi.tsao111.info
+  dnsNames:
+    - k8s-multi.tsao111.info
+    - www.tsao111.info
+  acme:
+    config:
+      - http01:
+        ingressClass: nginx
+      domains:
+        - k8s-multi.tsao111.info
+        - www.tsao111.info
+        
