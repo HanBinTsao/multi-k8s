@@ -13,7 +13,7 @@ metadata:
     config:
       - http01:
         ingressClass: nginx
-      domains:
-        - k8s-multi.tsao111.info
-        - www.tsao111.info
+    domains:
+      - k8s-multi.tsao111.info
+      - www.tsao111.info
         
